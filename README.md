@@ -21,20 +21,14 @@ The pipeline performs:
 
 📁 Folder Structure
 rna_seq_pipeline/
-├── Snakefile
-├── config.yaml
-├── scripts/
-│   └── deseq2_analysis.R
-├── data/
-│   ├── control1.fastq.gz
-│   ├── control2.fastq.gz
-│   ├── treated1.fastq.gz
-│   └── treated2.fastq.gz
-├── reference/
-│   ├── genome.fa
-│   └── annotation.gtf
-├── results/
-└── Dockerfile
+
+├── Snakefile · config.yaml · Dockerfile
+├── scripts/ → deseq2_analysis.R
+├── data/ → control1.fastq.gz, control2.fastq.gz, treated1.fastq.gz, treated2.fastq.gz
+├── reference/ → genome.fa, annotation.gtf
+
+└── results/
+
 
 
 🐍 Snakefile
@@ -208,10 +202,15 @@ docker run -it --rm \
 📊 Output Files
 results/
 ├── control1.counts.txt
+
 ├── control2.counts.txt
+
 ├── treated1.counts.txt
+
 ├── treated2.counts.txt
+
 ├── deseq2_results.csv
+
 └── volcano_plot.png
 
 
