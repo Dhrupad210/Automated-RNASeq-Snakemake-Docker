@@ -20,11 +20,15 @@ The pipeline performs:
 6. Volcano plot visualization with gene labels (ggplot2 + ggrepel)
 
 📁 Folder Structure
+
 rna_seq_pipeline/
 
 ├── Snakefile · config.yaml · Dockerfile
+
 ├── scripts/ → deseq2_analysis.R
+
 ├── data/ → control1.fastq.gz, control2.fastq.gz, treated1.fastq.gz, treated2.fastq.gz
+
 ├── reference/ → genome.fa, annotation.gtf
 
 └── results/
